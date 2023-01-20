@@ -163,7 +163,7 @@ object AppInfo {
     val appName by lazy { "Agrinis" }
     val versionCode by lazy { 1 }
     val versionName by lazy { "1.0" }
-    val compileSdkVersion by lazy { 32 }
-    val targetSdkVersion by lazy { 32 }
+    val compileSdkVersion by lazy { 33 }
+    val targetSdkVersion by lazy { 33 }
     val minSdkVersion by lazy { 21 }
 }
