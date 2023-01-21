@@ -9,6 +9,8 @@ object BuildPlugins {
     val android by lazy { "com.android.tools.build:gradle:${Versions.gradlePlugin}" }
     val kotlin by lazy { "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}" }
     val serialization by lazy { "org.jetbrains.kotlin:kotlin-serialization:${Versions.kotlin}" }
+    val hilt by lazy { "com.google.dagger:hilt-android-gradle-plugin:${Versions.hilt}" }
+    val safeArgs by lazy { "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.safeArgs}" }
 }
 
 /**
@@ -39,6 +41,11 @@ object Deps {
     val lifecycleCompose by lazy {  "androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycleVersion}" }
     val lifecycleRuntime by lazy {  "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleVersion}" }
     val archCoreTesting by lazy { "androidx.arch.core:core-testing:${Versions.archVersion}" }
+    val navFragmen by lazy { "androidx.navigation:navigation-fragment-ktx:${Versions.navFragmen}" }
+    val navUI by lazy { "androidx.navigation:navigation-ui-ktx:${Versions.navUI}" }
+    val databinding by lazy { "androidx.databinding:databinding-runtime:${Versions.databinding}" }
+    val hiltAndroid by lazy { "com.google.dagger:hilt-android:${Versions.hiltAndroid}" }
+    val navFragment by lazy { "androidx.hilt:hilt-navigation-fragment:${Versions.navFragment}" }
 
     val cameraXCore by lazy { "androidx.camera:camera-core:${Versions.cameraXVersion}" }
     val cameraXCamera2 by lazy { "androidx.camera:camera-camera2:${Versions.cameraXVersion}" }
@@ -65,6 +72,12 @@ object Deps {
     val timber by lazy { "com.jakewharton.timber:timber:${Versions.timber}" }
     val chucker by lazy { "com.github.chuckerteam.chucker:library:${Versions.chucker}" }
     val chuckerRelease by lazy { "com.github.chuckerteam.chucker:library-no-op:${Versions.chucker}" }
+
+    //tambahan
+    val lottie by lazy { "com.airbnb.android:lottie:${Versions.lottie}" }
+    //=== Picasso ===
+    val picaso by lazy { "com.squareup.picasso:picasso:${Versions.picaso}" }
+    val rounded by lazy { "com.makeramen:roundedimageview:${Versions.rounded}" }
 
     object Room {
         val ktx by lazy { "androidx.room:room-ktx:${Versions.roomVersion}" }
@@ -111,6 +124,7 @@ object Deps {
         val retrofitMoshi by lazy { "com.squareup.retrofit2:converter-moshi:${Versions.squareupRetrofit}" }
 
         val moshi by lazy { "com.squareup.moshi:moshi-kotlin:${Versions.moshi}" }
+        val gson by lazy { "com.squareup.retrofit2:converter-gson:${Versions.gson}" }
     }
 
     object Firebase {
@@ -165,5 +179,5 @@ object AppInfo {
     val versionName by lazy { "1.0" }
     val compileSdkVersion by lazy { 33 }
     val targetSdkVersion by lazy { 33 }
-    val minSdkVersion by lazy { 21 }
+    val minSdkVersion by lazy { 23 }
 }

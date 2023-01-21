@@ -14,6 +14,8 @@ object Versions {
     const val firebase = "2.0.0"
     const val firebaseCrashlytics = "2.7.1"
     const val firebasePerformance = "1.4.1"
+    const val hilt = "2.39.1"
+    const val safeArgs = "2.5.0"
 
     const val timber = "4.7.1"
     const val appCompat = "1.5.1"
@@ -24,7 +26,7 @@ object Versions {
     const val fragmentKtxVersion = "1.4.1"
     const val flexBox = "3.0.0"
     const val browserHelper = "2.4.0"
-    const val gson = "2.9.1"
+    const val gson = "2.8.1"
     const val navigationUi = "2.5.1"
 
     const val glide = "4.14.2"
@@ -33,8 +35,14 @@ object Versions {
     const val squareupRetrofit = "2.9.0"
     const val moshi = "1.14.0"
 
+
     const val lifecycleVersion = "2.6.0-alpha03"
     const val archVersion = "2.1.0"
+    const val navFragmen = "2.5.3"
+    const val navUI = "2.5.3"
+    const val databinding = "7.4.0"
+    const val hiltAndroid = "2.39.1"
+    const val navFragment = "1.0.0"
 
     const val roomVersion = "2.4.3"
     const val cameraXVersion = "1.2.0-alpha04"
@@ -84,4 +92,10 @@ object Versions {
 
         val koin by lazy { "3.3.0" }
     }
+
+    //tambahan
+    const val lottie = "3.5.0"
+    const val picaso = "2.8"
+    const val rounded = "2.3.0"
+
 }

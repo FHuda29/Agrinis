@@ -5,6 +5,8 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
     id("kotlin-parcelize")
+    id("dagger.hilt.android.plugin")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 // TODO: Buat sebuah file dengan nama apikey.properties pada project root yang berisi NEWS_API_KEY
@@ -45,6 +47,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
 }
 
@@ -65,6 +68,7 @@ dependencies {
     implementation(Deps.SquareUp.retrofit)
     implementation(Deps.SquareUp.retrofitMoshi)
     implementation(Deps.SquareUp.moshi)
+    implementation(Deps.SquareUp.gson)
 
     // KOIN
     implementation(Deps.Koin.core)
@@ -73,6 +77,15 @@ dependencies {
     // LIFECYCLE
     implementation(Deps.lifecycleLiveData)
     implementation(Deps.lifecycleViewModel)
+    implementation(Deps.navFragmen)
+    implementation(Deps.navUI)
+    implementation(Deps.databinding)
+
+    //=== Hilt ===
+    implementation(Deps.hiltAndroid)
+    kapt("com.google.dagger:hilt-android-compiler:2.39.1")
+    implementation(Deps.navFragment)
+    
     testImplementation(Deps.archCoreTesting)
 
     // KOTLIN COROUTINES
@@ -87,4 +100,9 @@ dependencies {
     // TESTING
     testImplementation(Deps.Testing.jUnit)
     testImplementation(Deps.Testing.mockito)
+
+    //tambahan
+    implementation(Deps.lottie)
+    implementation(Deps.picaso)
+    implementation(Deps.rounded)
 }
